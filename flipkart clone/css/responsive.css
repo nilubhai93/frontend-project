@@ -1,0 +1,30 @@
+@media screen and (max-width:900px){
+    body{
+        background-color: white;
+    }
+
+    nav{
+        flex-direction: column;
+
+    }
+    .logo{
+        justify-content: center;
+        margin: 10px -6px -3px 0px;
+    }
+    nav ul{
+        justify-content: center;
+        height: 36px;
+    }
+    .search{
+        justify-content: center;
+        margin: 11px 0 12px;
+    }
+    .slider{
+        margin:110px auto ;
+        height: 20vh;
+        /* margin: 9px auto; */
+        width: 70vw;
+        overflow: hidden;
+    }
+        
+}

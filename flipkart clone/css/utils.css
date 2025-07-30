@@ -1,0 +1,30 @@
+.text-center{
+       text-align:center;
+    }
+
+
+.flex-all-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.my-1{
+    margin:3px;
+}
+
+.my-2{
+    margin:26px 0 15px 0;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.cards{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    overflow:scroll;
+    /* justify-content: center; */
+}
