@@ -7,6 +7,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Roboto Condensed", sans-serif;
+    /* border: 0.2px solid red; */
 }
 
 :root {
@@ -32,6 +33,7 @@ a {
 .flex {
     display: flex;
     align-items: center;
+    /* justify-content: center; */
 }
 
 .between {
@@ -56,6 +58,18 @@ li {
     margin: auto;
     padding-inline: 1.5rem;
 }
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+    display: block;
+}
+
+
+
+
+
 
 
 
@@ -115,17 +129,67 @@ li {
     display: none;
 }
 
+.mobile-menu {
+    display: none;
+}
+
+
+
+
+
+
+
+
 
 /* SECTION STYLING */
 
+.hero-section {
+    /* background: gold; */
+    min-height: calc(100vh - 14vh);
+}
 
+.content,
+.image-container{
+    flex:1
+}
 
+h1{
+    font-size: 5.6vw;
+    color: var(--lead);
+}
 
+h1 span{
+    color: var(--gold-finger);
+}
 
+p{
+    font-size: 1.25rem;
+    color: gray;
+    line-height: 1.8rem;
+    font-weight: 400;
+}
 
+.para{
+    margin-block: 2rem;
+    max-width: 550px;
+}
+.social-icon{
+    background: var(--hint-yellow);
+    width: 3rem;
+    aspect-ratio: 1;
+    border-radius: 1rem;
+    font-size:1.2rem;
+    align-items: center;
+    text-align: center;
+    line-height: 3rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 2px 1px;
+    transition: 0.3s ease-in-out;
+}
 
-
-
+.social-icon:hover{
+    background: var(--lead);
+    color: var(--pure-white);
+}
 
 
 
@@ -152,5 +216,32 @@ li {
 
     .desktop-acion>.hamburger {
         display: block;
+    }
+
+    .mobile-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        position: absolute;
+        top: 20%;
+        left: -100%;
+        transform: translateX(-50%);
+        width: 20rem;
+        padding: 2rem;
+        background: var(--pure-white);
+        border: 2px solid var(--gold-finger);
+        border-radius: 2rem;
+        box-shadow:
+            rgba(0, 0, 0, 0.079) 8px 8px 8px,
+            rgba(0, 0, 0, 0.079) 8px 8px 8px inset;
+        transform: 0.5s ease-in-out;
+    }
+
+
+    .mobile-menu-active {
+        left: 50%;
+        transform: translateX(-50%);
     }
 }
