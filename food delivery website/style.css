@@ -33,6 +33,7 @@ a {
 .flex {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     /* justify-content: center; */
 }
 
@@ -66,7 +67,16 @@ img {
     display: block;
 }
 
+.p-top{
+    padding-top:4rem;
+}
+.text-center{
+    text-align: center;
+}
 
+.mt-4{
+    margin-top: 4rem;
+}
 
 
 
@@ -137,10 +147,6 @@ img {
 
 
 
-
-
-
-
 /* SECTION STYLING */
 
 .hero-section {
@@ -149,36 +155,40 @@ img {
 }
 
 .content,
-.image-container{
-    flex:1
+.image-container,
+.service-card {
+    flex: 1;
+    flex-basis: 300px;
+
 }
 
-h1{
+h1 {
     font-size: 5.6vw;
     color: var(--lead);
 }
 
-h1 span{
+h1 span {
     color: var(--gold-finger);
 }
 
-p{
+p {
     font-size: 1.25rem;
     color: gray;
     line-height: 1.8rem;
     font-weight: 400;
 }
 
-.para{
+.para {
     margin-block: 2rem;
     max-width: 550px;
 }
-.social-icon{
+
+.social-icon {
     background: var(--hint-yellow);
     width: 3rem;
     aspect-ratio: 1;
     border-radius: 1rem;
-    font-size:1.2rem;
+    font-size: 1.2rem;
     align-items: center;
     text-align: center;
     line-height: 3rem;
@@ -186,10 +196,58 @@ p{
     transition: 0.3s ease-in-out;
 }
 
-.social-icon:hover{
+.social-icon:hover {
     background: var(--lead);
     color: var(--pure-white);
 }
+
+/* sectin 01 */
+h5{
+    font-size:1.2rem;
+    letter-spacing: 0.2rem;
+    color:var(--gold-finger);
+    text-transform: uppercase;
+}
+h2{
+    font-size:3.7rem;
+    text-transform: capitalize;
+}
+h3{
+    font-size: 2rem;
+}
+
+.service-card h3{
+    margin-top: 1.5rem;
+    margin-bottom:1.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -209,6 +267,7 @@ p{
 
 @media screen and (max-width:780px) {
 
+    /* header */
     .navlist,
     .desktop-acion .btn {
         display: none;
@@ -244,4 +303,22 @@ p{
         left: 50%;
         transform: translateX(-50%);
     }
+
+
+
+
+
+
+    /* section style */
+    h1 {
+        font-size: 3.6rem;
+    }
+
+    .gap-2 {
+        gap: 1.2rem;
+    }
+    .gap-4 {
+        gap: 4rem;
+    }
+
 }
